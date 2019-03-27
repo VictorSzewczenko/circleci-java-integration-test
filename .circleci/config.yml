@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/openjdk:8-jdk-browsers
+      - image: maven:3.5.3-jdk-8-alpine
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -36,4 +36,4 @@ jobs:
           key: circleci-demo-java-spring-{{ checksum "pom.xml" }}
 
       # run tests!
-      - run: mvn package
+      - run: mvn clean package
