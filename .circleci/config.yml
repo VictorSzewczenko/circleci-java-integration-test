@@ -43,7 +43,7 @@ jobs:
     working_directory: ~/circleci-demo-java-spring-docker
     steps:
       - checkout
-      - setup_remote_docker
+      - setup_remote_docker:
           docker_layer_caching: true
       # build and push Docker image
       - run: |
