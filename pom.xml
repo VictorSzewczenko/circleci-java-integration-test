@@ -32,6 +32,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>circleci-integration</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
